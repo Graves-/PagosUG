@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar color='azulUG'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Mis Lineas de Referencia</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-card color='azulUG'>
+    <ion-card-content>
+      Desliza a la izquierda para ver las opciones de pagos.
+    </ion-card-content>
+  </ion-card>
+
+  <hr />
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let pago of pagos">
+      <ion-item>
+        <h2>{{pago.pago.nombre.toUpperCase()}}</h2>
+        <h2><strong>Monto: </strong>${{pago.pago.monto}}</h2>
+        <h3><strong>RFC: </strong>{{pago.pago.rfc}}</h3>
+        <h3><strong>Fecha: </strong> {{pago.pago.fecha}}</h3>
+
+        <ion-badge item-end *ngIf="pago.pago.id_estatus === 1" color='warning'>{{pago.pago.estatus}}</ion-badge>
+        <ion-badge item-end *ngIf="pago.pago.id_estatus === 2 || pago.pago.id_estatus === 4" color='secondary'>{{pago.pago.estatus}}</ion-badge>
+        <ion-badge item-end *ngIf="pago.pago.id_estatus === 3 || pago.pago.id_estatus === 5" color='danger'>{{pago.pago.estatus}}</ion-badge>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="secondary" (click)="imprimirPago(pago.pago.id_pago)">
+          <ion-icon name="print"></ion-icon>
+          Imprimir
+        </button>
+      </ion-item-options>
+      
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>

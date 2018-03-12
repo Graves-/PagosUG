@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color='azulUG'>
+    <ion-title>Guardar Pago</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="pagoSuccess === true">
+    <ion-card-header text-center>
+      Nuevo Pago Registrado
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+          <strong>¡Su pago ha sido generado con éxito con el folio: {{idPago}}!</strong>
+      </p>
+      <p>
+          Para imprimir su formato de pago haga click en el botón de 'Ver Línea de Referencia'
+      </p>
+      <br />
+      <button ion-button block (click)="openPdfPage()" color="secondary"><ion-icon name="document"></ion-icon>&nbsp; Ver Línea de Referencia</button>
+      <br />
+      <p>
+          Al dar clic se generara un archivo pdf con la información necesaria para realizar tu pago en sucursal.
+      </p>
+    </ion-card-content>
+
+    <button ion-button icon-left clear small item-end (click)="homeClicked()">
+      <ion-icon name="home"></ion-icon>
+      <div>Regresar al Inicio</div>
+    </button>
+  </ion-card>
+</ion-content>

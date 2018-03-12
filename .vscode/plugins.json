@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-pin-dialog","cordova-plugin-whitelist","cordova-plugin-device","cordova-plugin-splashscreen","cordova-plugin-ionic-webview","cordova-plugin-ionic-keyboard","cordova-plugin-document-viewer","cordova-plugin-file-opener2","cordova-plugin-inappbrowser"]}

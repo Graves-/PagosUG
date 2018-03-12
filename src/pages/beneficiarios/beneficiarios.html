@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color='azulUG'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Mis Beneficiarios</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card *ngFor="let itemBen of arrBeneficiarios;">
+      <ion-item>
+        <ion-avatar item-start>
+          <img src={{itemBen.foto}}>
+        </ion-avatar>
+        <h2 text-wrap>{{itemBen.nombre}}</h2>
+        <p><strong>RFC: </strong>{{itemBen.rfc}}</p>
+      </ion-item>
+    
+      <ion-card-content>
+          <ion-item>
+              <ion-icon name="card"></ion-icon> {{itemBen.tipo}}
+            <ion-badge item-end>{{itemBen.clave}}</ion-badge>
+          </ion-item>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
+

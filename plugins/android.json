@@ -1,0 +1,39 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.pagos.UGTO"
+    },
+    "cordova-plugin-document-viewer": {
+      "PACKAGE_NAME": "io.pagos.UGTO"
+    },
+    "cordova-plugin-file-opener2": {
+      "PACKAGE_NAME": "io.pagos.UGTO"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "io.pagos.UGTO"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "io.pagos.UGTO"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.pagos.UGTO"
+    },
+    "cordova-plugin-pin-dialog": {
+      "PACKAGE_NAME": "io.pagos.UGTO"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.pagos.UGTO"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.pagos.UGTO"
+    }
+  },
+  "dependent_plugins": {}
+}
