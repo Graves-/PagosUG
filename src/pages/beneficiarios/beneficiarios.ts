@@ -1,14 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import axios from 'axios';
 import config from '../../config';
-
-/**
- * Generated class for the BeneficiariosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -20,7 +13,7 @@ export class BeneficiariosPage {
   //arrBeneficiarios: { idben: number, idTipo: number, nombre: string, clave: string, rfc: string, esTitular: string, foto: string }[] = [];
   arrBeneficiarios = [];
   arrFotos:string[] = [];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private loadCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {

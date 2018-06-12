@@ -26,7 +26,7 @@
         <h2>{{pago.pago.nombre.toUpperCase()}}</h2>
         <h2><strong>Monto: </strong>${{pago.pago.monto}}</h2>
         <h3><strong>RFC: </strong>{{pago.pago.rfc}}</h3>
-        <h3><strong>Fecha: </strong> {{pago.pago.fecha}}</h3>
+        <h3><strong>Fecha: </strong> {{formatearFecha(pago.pago.fecha_pago)}}</h3>
 
         <ion-badge item-end *ngIf="pago.pago.id_estatus === 1" color='warning'>{{pago.pago.estatus}}</ion-badge>
         <ion-badge item-end *ngIf="pago.pago.id_estatus === 2 || pago.pago.id_estatus === 4" color='secondary'>{{pago.pago.estatus}}</ion-badge>
@@ -38,8 +38,11 @@
           <ion-icon name="print"></ion-icon>
           Imprimir
         </button>
+        <button ion-button color="primary" (click)="generarCodigoBarras(pago.pago.referenciado_ug)">
+          <ion-icon name="barcode"></ion-icon>
+          Código de Barras
+        </button>
       </ion-item-options>
-      
     </ion-item-sliding>
   </ion-list>
 </ion-content>

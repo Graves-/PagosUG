@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Memo\\Documents\\ionic\\PagosUG\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "/Users/guillermo/Documents/ionic/PagosUG/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Memo\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.0.aar\\7dc54206fba144d1cf58432ba9a8505b\\res\\values-v24\\values-v24.xml",
+                    "source": "/Users/guillermo/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/3daff900d9f1ce4f3be81b1869149715/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

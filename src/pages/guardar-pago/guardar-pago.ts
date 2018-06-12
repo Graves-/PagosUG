@@ -55,7 +55,7 @@ export class GuardarPagoPage {
 
   openPdfPage(){
     const url = `${config.baseURL}/PDFPago?idPago=${this.idPago}`;
-    this.iab.create(url, '_self', {});
+    this.iab.create(url, '_system', {});
   }
 
   homeClicked(){

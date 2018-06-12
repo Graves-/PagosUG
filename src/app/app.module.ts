@@ -7,6 +7,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { NativeStorage } from '@ionic-native/native-storage';
+import { FileOpener } from '@ionic-native/file-opener';
+import { File } from '@ionic-native/file';
+import { Device } from '@ionic-native/device';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -15,6 +19,9 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { MisLineasReferenciaPage } from '../pages/mis-lineas-referencia/mis-lineas-referencia';
+import { CodigoBarrasPage } from '../pages/codigo-barras/codigo-barras';
+import { IntroPage } from '../pages/intro/intro';
+import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -26,7 +33,10 @@ import { MisLineasReferenciaPage } from '../pages/mis-lineas-referencia/mis-line
     PagoconeptoPage,
     DatosConceptoPage,
     GuardarPagoPage,
-    MisLineasReferenciaPage
+    MisLineasReferenciaPage,
+    CodigoBarrasPage,
+    IntroPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -42,13 +52,20 @@ import { MisLineasReferenciaPage } from '../pages/mis-lineas-referencia/mis-line
     PagoconeptoPage,
     DatosConceptoPage,
     GuardarPagoPage,
-    MisLineasReferenciaPage
+    MisLineasReferenciaPage,
+    CodigoBarrasPage,
+    IntroPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    InAppBrowser
+    InAppBrowser,
+    NativeStorage,
+    FileOpener,
+    File,
+    Device
   ]
 })
 export class AppModule {}

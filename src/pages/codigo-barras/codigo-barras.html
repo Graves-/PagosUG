@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color='azulUG'>
+    <ion-title>Codigo de Barras</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div class="main-cb">
+    <svg id="code128"></svg>
+  </div>
+
+  <div>
+    <button ion-button (click)="imprimirPDF()">Imprimir PDF</button>
+  </div>
+</ion-content>

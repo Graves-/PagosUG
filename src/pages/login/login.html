@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="azulUG">
+    <ion-title text-center>Iniciar Sesión</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div style="min-height:100px;background-color:#b7ae85"></div>
+    <div align="center" style="margin-top:-60px">
+      <img src="assets/imgs/login/escudo.png" style="max-width:60%; max-height:60%" />
+    </div>
+
+    <div style="padding-left:40px; padding-right:40px">
+      <ion-list>
+        <ion-item>
+          <ion-label floating>Correo Institucional</ion-label>
+          <ion-input [(ngModel)]="usuario" type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label floating>Contraseña</ion-label>
+          <ion-input [(ngModel)]="password"  type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+
+      <div align="center">
+        <br />
+        <button ion-button (click)="fnIniciarSesion()" style="background-color:#01538b;border-radius:10px;min-width:200px; min-height:50px"> Ingresar </button>
+        <!--<button ion-button (click)="fnCloseSesionModal()"> Cerrar (provisional) </button>-->
+      </div>
+    </div>
+</ion-content>
